@@ -27,6 +27,11 @@ const RandoColo = () => {
             <button onClick={() => setTypeOfColor("hex")}>Create hex color</button>
             <button onClick={() => setTypeOfColor("rgb")}>Create RGB color</button>
             <button onClick={typeOfColor === "hex" ? handelCreateRandomColorHex : handelCreateRandomColorRGB}>Generate Random Color</button>
+            <div>
+                <h3>Random Color: {color}</h3>
+
+                <h3>Type: {typeOfColor}</h3>
+            </div>
         </div>
     )
 }
